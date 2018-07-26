@@ -3,6 +3,9 @@ import React from 'react';
 import './top-nav.css';
 
 export default function TopNav(props) {
+    function onClick(){
+        props.reset();
+    }
     return (
         <nav>
             <ul className="clearfix">
@@ -12,7 +15,7 @@ export default function TopNav(props) {
                     </a>
                 </li>
                 <li>
-                    <a className="new" href="#">
+                    <a className="new" href="#" onClick={() => onClick()}>
                         + New Game
                     </a>
                 </li>

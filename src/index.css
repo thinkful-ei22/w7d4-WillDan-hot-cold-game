@@ -48,4 +48,9 @@ a {
 ul li {	
 	display: inline;
 }
+.main-box {
+	width: 380px;
+	margin: 0 auto;
+	background-color: #394264;
+}
 
