@@ -47,6 +47,10 @@ handleSubmit(guess){
     this.setState({ count: this.state.count+1 });
 }
 
+componentDidMount(){
+    document.getElementById('userGuess').focus();
+}
+
 resetGameState() {
     const newState = Object.assign({}, {
         randomNum: numGenerator(),
